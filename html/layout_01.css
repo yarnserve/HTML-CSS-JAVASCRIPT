@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+.container {    
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    background-color: #D9D9D9;
+    height: 100px;
+    line-height: 100px;
+}
+
+.contents {
+    background-color: #E6E6E6;
+    height: 624px;
+    line-height: 624px;
+}
+
+.footer {
+    background-color: #D9D9D9;
+    height: 300px;
+    line-height: 300px;
+}
