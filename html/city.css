@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #222;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {}
+
+/* header */
+.header {
+    display: flex;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    align-items: center;  
+    padding: 0 60px; 
+}
+
+.header .logo {
+    margin-right: auto;
+}
+
+.header .logo img {
+    width: 93px;
+    display: block;
+}
+
+.header .gnb {
+    display: flex;
+}
+
+.header .gnb li a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 55px;
+}
+
+.header .gnb li a:hover {
+    color: orangered;
+}
+
+.header .btns {
+    margin-left: 72px;
+}
+
+.header .btns .btn {
+    display: block;
+    width: 120px;
+    height: 50px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* contents */
+.contents {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.city_list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.city_list li {
+
+}
+
+.city_list li img {
+    display: block;
+    width: 570px;
+}
+
+.insta_list {}
+
+/* footer */
+.footer {}
