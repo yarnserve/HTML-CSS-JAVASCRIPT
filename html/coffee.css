@@ -113,6 +113,27 @@ body {
 
 .contents .section .texts {}
 
+.contents .section .texts h2 {
+    font-size: 24px;
+}
+
+.contents .section .texts p {
+    color: #646464;
+    line-height: 1.5;
+    margin-top: 32px;
+    margin-bottom: 46px;   
+}
+
+.contents .section .texts a {
+    display: block;
+    width: 160px;
+    height: 40px;
+    background-color: #B28C68;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
 
 
 .footer {}
