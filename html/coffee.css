@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+}
+
 body {
     color: #222;
     font-size: 14px;
@@ -20,6 +24,7 @@ body {
 
 .wrap {}
 
+/* header */
 .header {
     background-color: #222;
     color: #fff;
@@ -75,7 +80,40 @@ body {
     color: #fff;
 }
 
-.contents {}
+/* contents */
+.contents {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.contents .section {
+    display: flex;
+    gap: 60px;
+    margin: 50px 0;
+}
+
+.contents .section .photos {
+    display: flex;
+    gap: 20px;
+}
+
+.contents .section .photos .item_01 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contents .section .photos .item_01 img {
+    width: 220px;
+}
+
+.contents .section .photos .item_02 img {
+    width: 220px;
+}
+
+.contents .section .texts {}
+
+
 
 .footer {}
 
