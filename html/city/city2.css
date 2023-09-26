@@ -18,6 +18,7 @@ a {
 body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.4;
+    font-weight: 400;
 }
 
 .header {
@@ -60,10 +61,151 @@ body {
     text-align: center;
     line-height: 50px;
     border-radius: 8px;
+    margin-left: 72px;
 }
 
 
 
-.contents {}
+.contents {
+    margin-top: 120px;
+    margin-bottom: 248px;
+}
 
-.footer {}
+.contents h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+/* members */
+.members {
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+}
+
+.members ul {
+    display: flex;
+    gap: 30px;
+}
+
+.members .photo {
+    margin-bottom: 26px;
+}
+
+.members .names {
+    color: #4B4B4B;
+}
+
+.members .names h3 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.members .names p {
+    font-size: 16px;    
+}
+
+/* movie */
+.movie {
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+}
+
+.movie p {
+    text-align: center;
+    font-size: 24px;
+    width: 65%;
+    padding-bottom: 36px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* blog */
+.blog {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.blog .titles {
+    position: relative;
+    padding-bottom: 87px;    
+}
+
+.blog .titles h3 {
+    font-size: 36px;   
+    font-weight: 400; 
+ }
+
+.blog .titles a {
+   position: absolute;
+   top: 15px;
+   right: 0;
+   display: flex;
+   gap: 10px;
+   align-items: center;
+}
+
+.blog ul {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.blog ul li {
+    display: flex;
+    gap: 32px;
+}
+
+.blog .photo img {
+    width: 370px;
+    display: block;
+}
+
+.blog .texts {
+    color: #4B4B4B;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+.blog .texts h4 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.blog .texts p {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 76px;
+}
+
+.blog .texts .bottom {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 500;
+}
+
+
+.footer {
+    text-align: center;
+    background-color: #F5F5F5;
+    color: #808080;
+    padding-top: 52px;
+    padding-bottom: 56px;
+}
+
+.footer p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.footer .sns {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
