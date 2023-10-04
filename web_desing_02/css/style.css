@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #222;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #002866;
+}
+
+h1.logo {
+    text-indent: -9999px;
+    width: 150px;
+    height: 27px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+nav ul {
+    display: flex;
+    
+}
+
+nav ul li a {
+    padding: 0 40px;    
+    height: 100px;
+    display: block;
+    line-height: 100px;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+.slide img {
+    display: block;
+}
+
+main {
+    display: flex;
+    gap: 24px;
+    padding: 10px 0;
+}
+
+main section {
+    flex: 1;
+    height: 180px;
+}
+
+section.banner img {
+    display: block;
+}
+
+section.board .titles {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+section.board .titles h2 {
+    height: 48px;
+    text-align: center;
+    flex: 1;
+    line-height: 48px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+section.board .titles h2:first-child {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+section.board .titles h2:last-child {
+    background-color: #f0f0f0;
+}
+
+section.board ul {
+    padding: 10px;
+}
+
+section.board ul li a {
+    display: block;
+    padding: 4px;
+}
+
+section.board ul li a:hover {
+    text-decoration: underline;
+}
+
+section.links ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 85px);
+    gap: 10px 16px;
+}
+
+section.links ul li {
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #eee;
+}
