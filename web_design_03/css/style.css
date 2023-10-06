@@ -48,6 +48,12 @@ body {
     color: orangered;
 }
 
+/* slide */
+.slide img {
+    display: block;
+    width: 100%;
+}
+
 /* contents */
 .contents {
     display: flex;
@@ -59,6 +65,81 @@ body {
 .contents .banner,
 .contents .link {
     height: 180px;
+    flex: 1;    
+}
+
+
+.board .titles {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+.board .titles h2 {
     flex: 1;
+    background-color: #ff6347;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    cursor: pointer;
+}
+
+.board .titles h2:last-child {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.board ul {
+    padding: 10px;
+}
+
+.board ul li a {
+    display: block;
+    padding: 4px;
+}
+
+.board ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.link li a {
+    display: block;
+    background-color: #d9d9d9;
+    text-align: center;
+    height: 85px;
+    width: 184px;
+    line-height: 85px;
+    border-radius: 8px;
+}
+
+.link li a:hover {
+    font-weight: bold;
+}
+
+.footer {
     background-color: #eee;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer .sns {
+    display: flex;
+    gap: 30px;
 }
