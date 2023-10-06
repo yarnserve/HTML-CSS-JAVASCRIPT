@@ -145,3 +145,40 @@ body {
     display: flex;
     gap: 30px;
 }
+
+/* popup */
+.popup {
+    width: 600px;
+    height: 400px;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+}
+
+.popup h2 {
+    font-size: 26px;
+}
+
+.popup p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.popup .close_btn {
+    display: block;
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #666;
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
