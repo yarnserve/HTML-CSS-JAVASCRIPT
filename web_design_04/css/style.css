@@ -13,6 +13,11 @@ a {
     color: inherit;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
 body {
     font-size: 14px;
     line-height: 1.4;
@@ -61,9 +66,82 @@ body {
     height: 200px;
     padding: 10px 0;
     display: flex;
+    gap: 24px;
+}
+
+.contents > div {
+    flex: 1;
+}
+
+.board {}
+
+.board .titles {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+.board .titles h2 {
+    flex: 1;
+    height: 48px;
+    line-height: 48px;
+    background-color: #ff6347;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.board .titles h2:nth-child(2) {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.board .notice_list {
+    padding: 10px;
+}
+
+.board .notice_list li a {
+    display: block;
+    padding: 4px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+}
+
+.link {
+    display: flex;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.link li a {
+    display: block;
+    width: 184px;
+    height: 85px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 85px;
+}
+
+.link li a:hover {
+    background-color: #c2c2c2;
 }
 
 /* footer */
 .footer {
+    height: 100px;
     background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer .sns {
+    display: flex;
+    gap: 30px;
 }
