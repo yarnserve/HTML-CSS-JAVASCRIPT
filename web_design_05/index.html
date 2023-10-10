@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUST 쇼핑몰</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -61,12 +62,12 @@
         <div class="contents">
             <div class="board">
                 <div class="titles">
-                    <h2 class="">공지사항</h2>
-                    <h2 class="active">갤러리</h2>
+                    <h2 class="active">공지사항</h2>
+                    <h2>갤러리</h2>
                 </div>
                 <div class="lists">
                     <ul class="notice_list">
-                        <li><a href="#">2021년 2월 무이자 할부 카드안내 2021년 2월 무이자 할부 카드안내</a></li>
+                        <li><a href="#" class="showModal">2021년 2월 무이자 할부 카드안내 2021년 2월 무이자 할부 카드안내</a></li>
                         <li><a href="#">2월 무이자 할부 카드안내 2021년</a></li>
                         <li><a href="#">무이자 할부 카드안내 2021년</a></li>
                         <li><a href="#">할부 카드안내 2021년 2월 무이자 할부 카드안내 2021년 2월 카드안내</a></li>
@@ -100,6 +101,34 @@
                 <a href="#">유튜브</a>
             </div>
         </div>
-    </div>    
+    </div>  
+    
+    <div class="modal">
+        <h2>이것은 팝업입니다.</h2>
+        <p>제1항의 해임건의는 국회재적의원 3분의 1 이상의 발의에 의하여 국회재적의원 과반수의 찬성이 있어야 한다. 국가는 주택개발정책등을 통하여 모든 국민이 쾌적한 주거생활을 할 수 있도록 노력하여야 한다.
+        혼인과 가족생활은 개인의 존엄과 양성의 평등을 기초로 성립되고 유지되어야 하며, 국가는 이를 보장한다. 대통령은 내우·외환·천재·지변 또는 중대한 재정·경제상의 위기에 있어서 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치가 필요하고 국회의 집회를 기다릴 여유가 없을 때에 한하여 최소한으로 필요한.</p>
+        <button class="closeModal">닫기</button>
+    </div>
+
+    <script>
+        // 메뉴
+        $('.gnb').hover(
+            function(){
+                $(this).find('ul').slideDown('fast')
+            },
+            function(){
+                $(this).find('ul').slideUp('fast')
+            },
+        )
+
+        // 모달
+        $('.showModal').click(function(){
+            $('.modal').show()
+        })
+
+        $('.closeModal').click(function(){
+            $('.modal').hide()
+        })
+    </script>
 </body>
 </html>
