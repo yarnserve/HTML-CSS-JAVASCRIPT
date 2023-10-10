@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #222;    
+}
+
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid blue;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb > li > a {
+    display: block;
+    padding: 0 60px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.gnb > li > a:hover {
+    color: orangered;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.gnb ul li a {
+    display: block;
+    padding: 16px 10px;
+    background-color: #fff;
+    text-align: center;
+ }
+
+ /* slide */
+.slider {
+   position: relative;
+   height: 300px;
+   overflow: hidden;
+}
+
+.slides {
+   display: flex;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.slide img {
+   display: block;
+}
+
+/* contents */
+.contents {
+   display: flex;
+   gap: 24px;
+   height: 200px;
+   padding: 10px 0;
+}
+
+.contents > div {
+   width: 384px;
+}
+
+.board .titles {
+   display: flex;
+   gap: 4px;
+   border-bottom: 3px solid #ff6347;
+}
+    
+.board .titles h2 {
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 190px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.board .titles h2.active {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.board .notice_list {
+    padding: 10px 6px;
+    display: none;
+}
+
+.board .notice_list li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.board .notice_list li::before {
+    content: '>';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    color: #ff6347;
+}
+
+
+.board .notice_list li a {
+    display: block;
+    padding: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 360px;
+}
+
+.board .notice_list li a:hover {
+    text-decoration: underline;
+}
+
+.board .gallery_list {
+    padding: 10px;
+}
+
+.board .gallery_list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.board .gallery_list li:last-child {
+    margin-right: 0;
+}
+
+.board .gallery_list img {
+    width: 110px;
+}
+
+/* footer */
+.footer {
+   background-color: #eee;
+}
