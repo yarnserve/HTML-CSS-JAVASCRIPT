@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1 class="logo">직접선택자</h1>
+        <h2 id="title">제목 2</h2>
+        <h3 class="sub_title">제목 3</h3>
+        <h4 class="sub_title">제목 4</h4>
+    </div>
+
+    <div class="section">
+        <h1 class="title_1">인접 관계 선택자</h1>
+        <h2 class="title_2">제목2</h2>
+        <h3 class="title_3">제목3</h3>
+        <p class="text_1">내용 1</p>
+        <p class="text_2">내용 2</p>
+        <p class="text_3">내용 3</p>
+        <p class="text_4">내용 4</p>
+        <p class="text_5">내용 5</p>
+    </div>
+
+    <div class="section">
+        <ul id="list">
+            <li class="item_1">
+                리스트 1
+                <ul>
+                    <li class="sub_item_1">리스트 1 - 1</li>
+                    <li>리스트 1 - 2</li>
+                    <li>리스트 1 - 3</li>
+                </ul>
+            </li>
+            <li>리스트 2</li>
+            <li>리스트 3</li>
+        </ul>
+    </div>
+    
+    <script>
+        // 직접 선택자
+        // $('*').css('color', 'red')
+        // $('#title').css('color', 'green')
+        // $('.sub_title').css({ color: 'blue', border: '4px solid red'})
+        // $('h3').css('fontSize', 50)
+        // $('h1, #title').css('backgroundColor', 'orange')
+        // $('h4.sub_title').css('fontSize', 50)
+
+        // 인접 관계 선택자
+        $('h2').parent().css('border', '2px solid #666') // 부모 요소
+        $('#wrap h1').css('color', 'red') // 하위 요소
+        $('#list > li').css('border', '1px solid red') // 자식 요소
+    </script>
+</body>
+</html>
