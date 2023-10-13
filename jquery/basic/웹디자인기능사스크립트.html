@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인기능사 스크립트</title>
+    <script src="./script/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <button class="show_modal">팝업모달</button>
+    <div class="modal">
+        <h2>이것을 모달입니다.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam provident recusandae error similique! Laborum laboriosam dolores perspiciatis, neque est voluptatum quae officiis, ullam odio velit quidem qui cupiditate iusto veniam.</p>
+        <button class="close_modal">닫기</button>
+    </div>  
+
+    <section>
+        <button class="btn">버튼</button>
+        <button class="btn2">버튼2</button>
+        <button class="btn3">토글 버튼</button>
+        <div class="box">안녕</div>
+    </section>
+
+    <script>
+        $('.btn').click(
+            function() {
+                $('.box').addClass('active')
+            }
+        )
+
+        $('.btn2').click(
+            function() {
+                $('.box').removeClass('active')
+            }
+        )
+
+        $('.btn3').click(
+            function() {
+                $('.box').toggleClass('active')
+            }
+        )
+    </script>
+    
+    <script>
+        // 모달
+        $('.show_modal').click(
+            function() {
+               $('.modal').show()
+            }
+        )
+
+        $('.close_modal').click(
+            function() {
+                $('.modal').hide()
+            }
+        )
+    </script>
+</body>
+</html>
