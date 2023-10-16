@@ -22,6 +22,96 @@
         <div class="box">안녕</div>
     </section>
 
+    <hr>
+
+    <ul class="gnb">
+        <li>
+            <a href="#">과일</a>
+            <ul class="sub">
+                <li><a href="#">사과</a></li>
+                <li><a href="#">수박</a></li>
+                <li><a href="#">복숭아</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">음료</a>
+            <ul class="sub">
+                <li><a href="#">커피</a></li>
+                <li><a href="#">물</a></li>
+                <li><a href="#">콜라</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./images/slide_01.jpg" alt=""></div>
+            <div class="slide"><img src="./images/slide_02.jpg" alt=""></div>
+            <div class="slide"><img src="./images/slide_03.jpg" alt=""></div>          
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="contents">
+        <div class="tab">
+            <div class="titles">
+                <h2 class="active">공지사항</h2>
+                <h2>갤러리</h2>
+            </div>
+            <div class="items">
+                <div class="item">공지사항 내용....</div>
+                <div class="item">갤러리 내용....</div>                
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <script>
+        $('.item').eq(0).show()
+        
+        $('.titles h2').click(function(){
+            $('.titles h2').removeClass('active')
+            $(this).addClass('active')
+            
+            $('.item').hide()
+            $('.item').eq($(this).index()).show()
+        })
+    </script>
+
+
+
+    <script>
+        setInterval(function(){
+            $('.slides').animate({left: '-100%'}, function(){
+                $('.slide').first().appendTo('.slides')
+                $('.slides').css('left', 0)
+            })
+        }, 3000)
+    </script>
+
+    <script>
+        // $('.gnb').mouseenter(function(){
+        //     console.log('안녕...')
+        // })
+
+        // $('.gnb').mouseleave(function(){
+        //     console.log('hello...')
+        // })
+
+        $('.gnb').hover(
+            function() {
+                $('.sub').stop().slideDown('fast')
+            },
+            function() {
+                $('.sub').stop().slideUp('fast')
+            }
+        )
+    </script>
+
     <script>
         $('.btn').click(
             function() {

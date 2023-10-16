@@ -28,3 +28,86 @@ section {
     background-color: #000;
     color: #fff;
 }
+
+ul {
+    list-style: none;
+}
+
+.gnb {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.gnb > li {
+    position: relative;
+    background-color: red;
+}
+
+.gnb ul {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100px;
+    display: none;
+}
+
+.slider {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    background-color: red;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider img {
+    display: block;
+    width: 1200px;
+    height: 300px;
+}
+
+
+.contents {
+    height: 200px;
+    padding: 10px 0;
+}
+
+.tab {
+    width: 400px;
+}
+
+.titles {
+    display: flex;
+    gap: 10px;
+}
+
+.titles h2 {
+    flex: 1;
+    background-color: #ddd;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.titles h2.active {
+    background-color: orangered;
+    color: #fff;
+}
+
+.item {
+    height: 130px;
+    background-color: #eee;
+    display: none;
+}
