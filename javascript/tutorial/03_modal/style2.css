@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    background-color: yellow;
+}
+
+.content {
+    width: 400px;
+    margin: 50px auto;
+}
+
+.content.active {
+    filter: blur(10px);
+}
+
+.photo {
+    margin: 30px 0;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.modal {
+    width: 600px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;  
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.modal.active {
+    pointer-events: initial;  
+    opacity: 0.7;
+    top: 50%;
+}
+
+.modal p {
+    line-height: 1.5;
+    padding: 30px 0;
+}
+
+button {    
+    padding: 6px 12px;
+    cursor: pointer;
+}
