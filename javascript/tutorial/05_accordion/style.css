@@ -60,6 +60,7 @@ h1 {
     padding: 0 20px;
     height: 0;
     overflow: hidden;
+    transition: all 0.3s;
 }
 
 .accordion .content.active p {
