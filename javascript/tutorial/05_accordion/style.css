@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    color: #eee;
+    background-color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.accordion {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.accordion .content {
+    margin-bottom: 1px;
+}
+
+.accordion .content h2 {
+    background-color: #444;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion .content h2:hover {
+    background-color: #666;
+}
+
+.accordion .content h2::after {
+    font-family: 'xeicon';
+    content: "\e913";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+}
+
+.accordion .content p {
+    line-height: 1.6;
+    padding: 0 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+.accordion .content.active p {
+    height: auto;
+    background-color: #333;
+    padding: 20px;
+}
+
+.accordion .content.active h2::after {
+    content: "\e91a";
+}
