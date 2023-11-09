@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 14px;
+    color: #222;
+}
+
+.wrap {
+    width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.lotto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lotto .numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.lotto .numbers li {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lotto .btn {
+    padding: 4px 10px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.items {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.items li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}

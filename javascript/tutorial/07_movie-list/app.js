@@ -50,3 +50,35 @@ const director = document.querySelector('.director span')
 const text = document.querySelector('.text')
 const prev = document.querySelector('.prev')
 const next = document.querySelector('.next')
+
+let current = 0
+
+next.addEventListener('click', function() {
+    current++
+    if(current > movies.length - 1) current = 0
+    showMoive(current)
+})
+
+prev.addEventListener('click', function(){
+    current--
+    if(current < 0) {
+        current = movies.length - 1
+    }
+    showMoive(current)
+})
+
+function showMoive(current) {
+    const item = movies[current]
+
+    poster.src = item.poster
+    num.textContent = item.id
+    title.textContent = item.title
+    director.textContent = item.director
+    text.textContent = item.text
+}
+
+function init() {
+    showMoive(current)        
+}
+
+init()
