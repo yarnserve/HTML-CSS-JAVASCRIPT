@@ -60,6 +60,10 @@ h1 {
     margin: 30px 0;
 }
 
+.btn.none {
+    display: none;
+}
+
 .items {
     display: flex;
     border-bottom: 1px solid #ccc;

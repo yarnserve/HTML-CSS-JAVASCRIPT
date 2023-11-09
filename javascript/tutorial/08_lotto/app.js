@@ -2,9 +2,9 @@ const btn = document.querySelector('.btn')
 const ball = document.querySelectorAll('.numbers li')
 const list = document.querySelector('.list')
 
-function addList(lotto) {
-  console.log(lotto)
+let count = 0
 
+function addList(lotto) {
   const ul = document.createElement('ul')
   ul.className = 'items'
   
@@ -14,7 +14,7 @@ function addList(lotto) {
     ul.appendChild(li)
   }
 
-  list.append(ul)
+  list.prepend(ul)
 }
 
 function printNumber() {
@@ -32,5 +32,26 @@ function printNumber() {
 }
 
 btn.addEventListener('click', function(){
-  printNumber()
+  if(count >= 10) {
+    snackbar.createSnackbar('하루 10번만 하세요',{
+      timeout: 3000,
+      actions: [
+        {
+          text: '확인',
+          style: {
+            color: 'tomato'
+          },
+          callback(button, snackbar) {
+            snackbar.destroy()           
+          }
+        }
+      ]
+    })
+    btn.classList.add('none')
+  } else {
+    printNumber()
+    count++
+    console.log(count);
+  }
+
 })
