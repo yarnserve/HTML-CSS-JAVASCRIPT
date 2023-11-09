@@ -7,10 +7,15 @@ const content = document.querySelectorAll('.content')
 // }
 
 for(let i = 0; i < content.length; i++) {
-    content[i].addEventListener('click', function(){
-        for(let j = 0; j < content.length; j++) {
-            content[j].classList.remove('active')
-        }
-        this.classList.toggle('active')
-    })
+    if(this.classList.contains('active')) {
+
+    } else {
+
+        content[i].addEventListener('click', function(){
+            for(let j = 0; j < content.length; j++) {
+                content[j].classList.remove('active')
+            }
+            this.classList.toggle('active')
+        })
+    }
 }
