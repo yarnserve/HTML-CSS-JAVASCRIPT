@@ -2,7 +2,6 @@ const weather = document.querySelector('.weather')
 const API = '26a8f813a56d73684d04cdff5a1f7720'
 
 function getWeaher(lat, lon) {
-    console.log(lat, lon);
 
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API}&units=metric`
 

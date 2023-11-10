@@ -52,3 +52,9 @@ input[type='text'] {
     margin-top: 10px;
     border-bottom: 1px solid #ccc;
 } 
+
+.todo_list li span {
+    cursor: pointer;
+    font-size: 18px;
+
+}
